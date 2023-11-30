@@ -7,3 +7,5 @@ The USGS is interested in building a new set of tools that will allow them to vi
 ## Featured Files
 
 ## Resources
+* [Leaflet-Legend](https://github.com/ptma/Leaflet.Legend/tree/master)
+* [CSS-Gradient](https://cssgradient.io)

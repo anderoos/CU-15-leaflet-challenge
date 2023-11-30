@@ -16,7 +16,7 @@ let topoMapLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png
 // Generate mainMap
 let mainMap = L.map('map', {
     center: [28.04, 1.66],
-    zoom: 2.4,
+    zoom: 3,
     layers: [defaultMapLayer]
 });
 
@@ -59,7 +59,7 @@ d3.json(earthquakeurl).then(function(payload){
                 depthMin = magEvent['geometry'].coordinates[2];
             }
         }
-        // console.log(magMax, magMin, depthMax, depthMin) // Check values
+        console.log(magMax, magMin, depthMax, depthMin) // Check values
 
         // Iterate through features
         for (let event of payload.features) {
@@ -88,5 +88,17 @@ d3.json(earthquakeurl).then(function(payload){
                 opacity: 0.9
             }
         }).addTo(mainMap);
+
+        L.control.Legend({
+            position: "topright",
+            title: "Depth Color Map",
+            symbolWidth: 80,
+            symbolHeight: 225,
+            legends: [{
+                type: "image",
+                url: "Images/green-red-cmap-mod.png",
+                label: ''
+            }]
+        }).addTo(mainMap)
     });
 });

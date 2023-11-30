@@ -27,7 +27,7 @@ function markerColor(depth) {
     let color = "#656565";
     if (depth) {
         let depthNormalized = normalizeData(depth, depthMin, depthMax)
-        let rChannel = 255 * (0.5 + depthNormalized);
+        let rChannel = (225 * depthNormalized);
         let gChannel = 255 - (255 * depthNormalized);
         let bChannel = 0;
         color = `rgb(${rChannel}, ${gChannel}, ${bChannel})`
