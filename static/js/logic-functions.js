@@ -13,11 +13,11 @@ function normalizeData(feature, min, max) {
 // Scale markersize to normalized magnitude
 function markerSize(magnitude) {
     let magNormalized = 0
-    let modifier = 80000
+    let modifier = 100000
     if (magnitude){
         magNormalized = normalizeData(magnitude, magMin, magMax)
     }
-    return Math.exp(magNormalized) * modifier
+    return magNormalized * modifier
 }
 
 
