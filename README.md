@@ -1,4 +1,4 @@
-# CU-15-Leaflet Challenge
+# [CU-15-Leaflet Challenge](https://anderoos.github.io/CU-15-leaflet-challenge/)
 ![hero-image](https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/Images/1-Logo.png)
 ## Abstract 
 The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.
@@ -13,9 +13,10 @@ The USGS is interested in building a new set of tools that will allow them to vi
 ![legend-and-options](https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/Images/options-panel.png)
 
 ## Featured links
+* [GitPages Link](https://anderoos.github.io/CU-15-leaflet-challenge/)
 * [logic-v2.js](https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/static/js/logic-v2.js)
 * [logic-functions.js](https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/static/js/logic-functions.js)
-* [index.html]https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/index.html
+* [index.html](https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/index.html)
 * [logic-v1.js (DEPRECATED)](https://github.com/anderoos/CU-15-leaflet-challenge/blob/main/static/js/logic-v1.js)
 
 ## Resources
