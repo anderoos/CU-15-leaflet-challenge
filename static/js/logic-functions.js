@@ -27,10 +27,11 @@ function markerColor(depth) {
     let color = "#656565";
     if (depth) {
         let depthNormalized = normalizeData(depth, depthMin, depthMax)
-        let rChannel = (225 * depthNormalized);
-        let gChannel = 255 - (255 * depthNormalized);
-        let bChannel = 0;
-        color = `rgb(${rChannel}, ${gChannel}, ${bChannel})`
+        // Hue range between 1 and 120 for red, yellow, green
+        let hue = 121 - (120 * depthNormalized)
+        let saturation = 100;
+        let lightness = 50;
+        color = `hsl(${hue}, ${saturation}%, ${lightness}%)`
     }
     return color
 }
